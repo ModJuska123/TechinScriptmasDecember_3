@@ -15,8 +15,11 @@ A visually appealing and festive Christmas-themed landing page designed to sprea
 
 ## 📂 Project Structure
 ├── index.html # Main HTML structure 
+
 ├── styles.css # CSS for styling the landing page 
+
 ├── images/ # Directory for all images used (tree, decorations, etc.) 
+
 └── README.md # Project description and usage instructions
 
 ## 🚀 Getting Started
@@ -26,7 +29,7 @@ A visually appealing and festive Christmas-themed landing page designed to sprea
 
 2. Navigate to the project directory:
 
-    cd christmas-landing-page
+    cd TechinScriptmasDecember_3
 
 3. Open index.html in your browser to view the page.
 
