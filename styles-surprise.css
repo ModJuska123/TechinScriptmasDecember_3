@@ -1,0 +1,119 @@
+/* styles-surprise.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #001a23, #004d61);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  
+  .surprise-container {
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    /* font-family: "Lobster", serif; */
+  }
+  
+  .gift-image img {
+    max-width: 400px;
+    margin: 20px 0;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-25px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .gift-image {
+    animation: jump 0.4s ease-out forwards;
+  }
+  
+  
+  .back-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #993366;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(153, 51, 102, 0.4);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+    background-color: #cc6699;
+    box-shadow: 0 8px 20px rgba(204, 102, 153, 0.5);
+  }
+  
+
+  /*Sniegas*/
+
+/* Sniego dribsniai */
+.snowflake {
+  position: absolute;
+  top: -10%; /* Startuoja virš puslapio */
+  color: white;
+  font-size: 2rem; /* Sniego dydis */
+  animation: fall 10s linear infinite, sway 3s ease-in-out infinite;
+  opacity: 1;
+}
+
+/* Animacijos */
+@keyframes fall {
+  0% {
+    top: -10%;
+    opacity: 0.8;
+  }
+  100% {
+    top: 110%; /* Nusileidžia už ekrano */
+    opacity: 0;
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(40px); /* Švelnus judėjimas į šonus */
+  }
+}
+
+/* Atsitiktinės vietos ir animacijos */
+.snowflake:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+.snowflake:nth-child(2) {
+  left: 30%;
+  animation-delay: 2s;
+}
+.snowflake:nth-child(3) {
+  left: 50%;
+  animation-delay: 4s;
+}
+.snowflake:nth-child(4) {
+  left: 70%;
+  animation-delay: 1s;
+}
+.snowflake:nth-child(5) {
+  left: 90%;
+  animation-delay: 3s;
+}

@@ -1,0 +1,117 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #002b36;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #001a23, #004d61);
+  }
+  
+  .container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .christmas-tree {
+    width: auto;
+    height: 250px;
+    margin: 0 auto 20px auto;
+    background: url('./img2.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .greeting {
+    font-size: 0.8em;
+    margin: 10px 0;
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.8);
+  }
+  
+  .message {
+    font-size: 0.8em;
+    margin: 10px 0 20px;
+    line-height: 1.5;
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.8);
+  }
+  
+  .gift-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #d95c5c;
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(217, 92, 92, 0.4);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .gift-button:hover {
+    background-color: #ff7b7b;
+    box-shadow: 0 8px 20px rgba(255, 123, 123, 0.5);
+  }
+  
+
+  /*Sniegas*/
+
+/* Sniego dribsniai */
+.snowflake {
+  position: absolute;
+  top: -10%; /* Startuoja virš puslapio */
+  color: white;
+  font-size: 2rem; /* Sniego dydis */
+  animation: fall 10s linear infinite, sway 3s ease-in-out infinite;
+  opacity: 1;
+}
+
+/* Animacijos */
+@keyframes fall {
+  0% {
+    top: -10%;
+    opacity: 0.8;
+  }
+  100% {
+    top: 110%; /* Nusileidžia už ekrano */
+    opacity: 0;
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(40px); /* Švelnus judėjimas į šonus */
+  }
+}
+
+/* Atsitiktinės vietos ir animacijos */
+.snowflake:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+.snowflake:nth-child(2) {
+  left: 30%;
+  animation-delay: 2s;
+}
+.snowflake:nth-child(3) {
+  left: 50%;
+  animation-delay: 4s;
+}
+.snowflake:nth-child(4) {
+  left: 70%;
+  animation-delay: 1s;
+}
+.snowflake:nth-child(5) {
+  left: 90%;
+  animation-delay: 3s;
+}
